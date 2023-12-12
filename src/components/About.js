@@ -35,25 +35,25 @@ const About = () => {
               I'm a React Front-end Web Developer. I always focus on making error free website and also on user satisfaction.
             </h3>
             <p className='mb-6'>
-              I'm a React Front-end Web Developer. I always focus on making error free website and also on user satisfaction.I'm a React Front-end Web Developer. I always focus on making
+            I am a Front End Web developer who is passionate about making error-free websites with 100% client satisfaction. I have a passion for learning and sharing my knowledge with others as publicly as possible. I love to solve real-world problems. I am strategic goal-oriented, and always work with an end goal in mind. Over the past years, I created 22 dynamic websites with backend. I pride myself on doing quality work and maintain excellent communication. Most of the time I work with React and Javascript but some technologies I enjoy working with include Tailwind, Daisy UI, and MongoDB for backend.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={12} duration={3}></CountUp> :
+                  {inView ? <CountUp start={0} end={8} duration={3}></CountUp> :
                     null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Yers of <br />
+                  Month of <br />
                   Experience
                 </div>
               </div>
 
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={15} duration={3}></CountUp> :
-                    null}K+
+                  {inView ? <CountUp start={0} end={17} duration={3}></CountUp> :
+                    null}+
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Project <br />
@@ -61,7 +61,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={8} duration={3}></CountUp> :
                     null}K+
@@ -70,7 +70,7 @@ const About = () => {
                   Satisfied <br />
                   Client
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>

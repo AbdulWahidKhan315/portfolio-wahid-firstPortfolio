@@ -1,10 +1,12 @@
 import React from 'react';
 
-import Image from '../assets/avatar.svg';
+import Image from '../assets/picInShape.png';
 
 import { FaGithub, FaYoutube, FaFacebook } from 'react-icons/fa'
 
 import { TypeAnimation } from 'react-type-animation'
+
+import { Link } from 'react-scroll';
 
 import { motion } from 'framer-motion'
 
@@ -43,26 +45,28 @@ const Banner = () => {
               />
             </motion.div>
             <motion.p variants={fadeIn('up', 0.5)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{once: false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>
+              I'm here to help you create a compelling and stunning web application as a frontend developer.
             </motion.p>
             <motion.div variants={fadeIn('up', 0.6)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{once: false, amount: 0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='home' className='text-gradient btn-link'>My Portfolio</a>
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+              <button className='btn btn-lg'>
+                <Link to='contact' >Contact me</Link>
+              </button>
+              {/* <a href='contact' className='text-gradient btn-link'>My Portfolio</a> */}
             </motion.div>
             {/* socials */}
             <motion.div variants={fadeIn('up', 0.7)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{once: false, amount: 0.7}} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='https://github.com/AbdulWahidKhan315'><FaGithub></FaGithub></a>
-              <a href='https://www.facebook.com/wkwahid315/'><FaFacebook></FaFacebook></a>
-              <a href='https://www.youtube.com/channel/UCa_gYv4BngqN7njFdY60C6g'><FaYoutube></FaYoutube></a>
+              initial='hidden'
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+              <a href='https://github.com/AbdulWahidKhan315' target='_blank' rel="noreferrer"><FaGithub></FaGithub></a>
+              <a href='https://www.facebook.com/wkwahid315/' target='_blank' rel="noreferrer"><FaFacebook></FaFacebook></a>
+              <a href='https://www.youtube.com/channel/UCa_gYv4BngqN7njFdY60C6g' target='_blank' rel="noreferrer"><FaYoutube></FaYoutube></a>
             </motion.div>
             <div>
 
@@ -72,7 +76,7 @@ const Banner = () => {
           <motion.div variants={fadeIn('down', 0.5)}
             initial='hidden'
             whileInView={'show'} className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-            <img src={Image} alt=''></img>
+            <img className='h-[600px] w-full object-cover' src={Image} alt=''></img>
           </motion.div>
         </div>
 
